@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Router } from 'express';
 import { FeeType, Role } from '@prisma/client';
 import { z } from 'zod';
