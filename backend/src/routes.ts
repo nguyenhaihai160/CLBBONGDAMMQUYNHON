@@ -1,0 +1,40 @@
+import { Router } from 'express';
+import { authRoutes } from './modules/auth/auth.routes.js';
+import { userRoutes } from './modules/users/user.routes.js';
+import { classRoutes } from './modules/classes/class.routes.js';
+import { studentRoutes } from './modules/students/student.routes.js';
+import { attendanceRoutes } from './modules/attendance/attendance.routes.js';
+import { paymentRoutes } from './modules/payments/payment.routes.js';
+import { uniformRoutes } from './modules/uniforms/uniform.routes.js';
+import { dashboardRoutes } from './modules/dashboard/dashboard.routes.js';
+import { zaloRoutes } from './modules/zalo/zalo.routes.js';
+import { settingsRoutes } from './modules/settings/settings.routes.js';
+import { reportRoutes } from './modules/reports/report.routes.js';
+import { coachPortalRoutes } from './modules/coach-portal/coachPortal.routes.js';
+import { scheduleRoutes } from './modules/schedules/schedule.routes.js';
+import { chatbotRoutes } from './modules/chatbot/chatbot.routes.js';
+import { parentPortalRoutes } from './modules/parent-portal/parentPortal.routes.js';
+import { coachPayrollRoutes } from './modules/coach-payroll/coachPayroll.routes.js';
+import { biometricRoutes } from './modules/biometrics/biometric.routes.js';
+
+export const routes = Router();
+
+routes.get('/health', (_req, res) => res.json({ status: 'ok', service: 'football-academy-manager', version: 'biometric-face-iris-camera-v9-student-code-fix' }));
+routes.use('/auth', authRoutes);
+routes.use('/users', userRoutes);
+routes.use('/classes', classRoutes);
+routes.use('/students', studentRoutes);
+routes.use('/attendance', attendanceRoutes);
+routes.use('/payments', paymentRoutes);
+routes.use('/uniforms', uniformRoutes);
+routes.use('/dashboard', dashboardRoutes);
+routes.use('/zalo', zaloRoutes);
+routes.use('/settings', settingsRoutes);
+routes.use('/reports', reportRoutes);
+routes.use('/coach-portal', coachPortalRoutes);
+routes.use('/schedules', scheduleRoutes);
+routes.use('/chatbot', chatbotRoutes);
+
+routes.use('/parent-portal', parentPortalRoutes);
+routes.use('/coach-payroll', coachPayrollRoutes);
+routes.use('/biometrics', biometricRoutes);
