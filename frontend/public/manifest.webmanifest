@@ -1,0 +1,43 @@
+{
+  "name": "Football Academy Manager Pro",
+  "short_name": "Academy Pro",
+  "description": "Ứng dụng quản lý học viên, lớp học, điểm danh, học phí và kho đồ cho CLB bóng đá cộng đồng.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#020617",
+  "theme_color": "#16a34a",
+  "categories": ["sports", "education", "productivity"],
+  "lang": "vi-VN",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Điểm danh nhanh",
+      "short_name": "Điểm danh",
+      "description": "Mở nhanh màn hình điểm danh lớp học",
+      "url": "/attendance",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Thẻ học viên",
+      "short_name": "Thẻ",
+      "description": "Mở nhanh danh sách thẻ học viên",
+      "url": "/student-cards",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

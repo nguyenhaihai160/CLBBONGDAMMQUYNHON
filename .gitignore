@@ -1,0 +1,26 @@
+# Secrets
+.env
+.env.*
+!.env.example
+!.env.production.example
+!.env.render.example
+
+# Dependencies/build
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+*.log
+npm-debug.log*
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Uploaded/runtime files and backups
+uploads/
+backups/
+*.dump
+*.sql
